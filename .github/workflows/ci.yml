@@ -1,16 +1,8 @@
-name: Laravel
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
+on: push
+name: CI
 jobs:
-  laravel-tests:
-
+  phpunit:
     runs-on: ubuntu-latest
-
     steps:
     - uses: shivammathur/setup-php@b7d1d9c9a92d8d8463ce36d7f60da34d461724f8
       with:
